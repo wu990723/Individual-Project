@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <cstdlib>
 #include <ctime>
+#include <cstring> 
 
 using namespace std;
 #define MAX_LENGTH 1<<10//单词的最大长度
@@ -62,7 +63,7 @@ while(skip()&&scanf("%[a-zA-Z]",_word)!=EOF) virtual_word.push_back(_word);
 sort(virtual_word.begin(),virtual_word.end(),cmp_raw_word);
 
 
-/*重定向输入流至 in.txt 文件,并读取 in.txt 文件中所有英文单词*/
+/*重定向输入流至目标文件,并读取目标文件中所有英文单词*/
 
 char ch[50];
 strcpy(ch,argv[1]);
